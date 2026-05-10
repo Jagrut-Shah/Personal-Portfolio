@@ -1,0 +1,23 @@
+.cardWrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius, 1rem);
+  background: rgba(var(--foreground-rgb), 0.02);
+  border: 1px solid rgba(var(--foreground-rgb), 0.05);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.spotlight {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}

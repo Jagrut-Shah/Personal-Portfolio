@@ -1,0 +1,17 @@
+.globalGlow {
+  position: absolute; /* Relative to document scroll height */
+  top: 0;
+  left: 0;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(var(--foreground-rgb), 0.04) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -3; /* Placed behind the main page content but above background grid */
+  filter: blur(50px);
+  will-change: transform;
+}
+
+[data-theme='light'] .globalGlow {
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.02) 0%, transparent 70%);
+}
